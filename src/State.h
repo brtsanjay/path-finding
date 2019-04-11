@@ -5,6 +5,9 @@
 
 namespace path_finding {
 
+// This class represents a generic state of any type, and its associated cost.
+// The cost is a representation of the value obtained from a suitable heuristic function
+// for a given scenario (if any).
 template <typename StateType>
 class State {
 public:
