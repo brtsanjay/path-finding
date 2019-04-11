@@ -6,7 +6,7 @@
 // Specialization to compute cost of int states.
 template <>
 double path_finding::computeCost<int>(int const& state) {
-	return state - 0;
+	return state;
 }
 
 int main() {
