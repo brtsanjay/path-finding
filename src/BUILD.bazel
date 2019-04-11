@@ -12,3 +12,11 @@ cc_library(
     visibility = ["//visibility:public"],
     deps = [":cost"],
 )
+
+cc_library(
+	name = "node",
+	hdrs = ["Node.h"],
+	include_prefix = "path_finding",
+    visibility = ["//visibility:public"],
+    deps = [":state"],
+)

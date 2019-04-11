@@ -7,3 +7,13 @@ cc_binary(
     	"//src:state",
     ],
 )
+
+cc_binary(
+	name = "node_example",
+	srcs = ["NodeExample.cpp"],
+    visibility = ["//visibility:public"],
+    deps = [
+		"//src:node",
+		"//src:state",
+    ],
+)
